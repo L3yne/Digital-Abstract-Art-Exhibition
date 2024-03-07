@@ -1,0 +1,135 @@
+@import url(https://fonts.googleapis.com/css?family=Manrope:200,300,regular,500,600,700,800);
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Manrope", serif;
+}
+
+.header {
+  background: linear-gradient(to right, #d6c1b3, #ddc3c3);
+  padding: 20px;
+  color: #111;
+  text-align: center;
+}
+
+.project-description {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.footer {
+  background: linear-gradient(to right, #d6c1b3, #ddc3c3);
+  padding: 2px;
+  color: #111;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.work-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 50px;
+  margin: 20px;
+}
+
+.floating-images {
+  width: 300px;
+  margin: 10px;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.floating-images p {
+  margin-left: 20px;
+  align-self: center;
+}
+
+.floating-images img {
+  width: 100%;
+  height: auto;
+}
+
+.floating-images p,
+.slideshow-container p,
+.slideshow-container h3 {
+  text-align: center;
+}
+
+.floating-images a,
+.slide-description a {
+  font-weight: 800;
+  font-style: normal;
+}
+
+.floating-images.animate {
+  opacity: 1;
+}
+
+.github-link,
+.source-link {
+  background-color: #32323232;
+  border: none;
+  padding: 5px 5px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.source-link {
+  align-self: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.github-icon {
+  width: 85px;
+  height: 30px;
+  vertical-align: -40%;
+}
+
+.github-link:hover,
+.source-link:hover {
+  background-color: #4e4d4d32;
+}
+
+.slideshow-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  max-width: 500px;
+  margin-bottom: 50px;
+}
+
+.slide {
+  display: none;
+}
+
+.slide-image {
+  width: 100%;
+  height: 600px;
+}
+
+.slide-description {
+  padding: 20px;
+}
+
+.slide-button {
+  height: 50px;
+}
